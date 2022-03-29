@@ -12,3 +12,4 @@ spec:
     requests:
       storage: 2Gi
   storageClassName: awx-projects-volume
+

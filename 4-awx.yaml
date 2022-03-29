@@ -25,3 +25,4 @@ spec:
 
   projects_persistence: true
   projects_existing_claim: awx-projects-claim
+

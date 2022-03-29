@@ -29,3 +29,4 @@ spec:
   storageClassName: awx-projects-volume
   hostPath:
     path: /data/projects
+
