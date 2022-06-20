@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+
+# Replace RELEASE_TAG_VERSION with the latest AWX Release version.
+# Recent AWX release version is 0.22.0
+
+  - github.com/ansible/awx-operator/config/default?ref=0.22.0
+  - 01-secret.yaml
+  - 02-pv.yaml
+  - 03-pvc.yaml
+  - 04-awx.yaml
+
+images:
+  - name: quay.io/ansible/awx-operator
+    newTag: 0.22.0
+
+namespace: awx
