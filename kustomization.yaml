@@ -5,7 +5,7 @@ resources:
 # Replace RELEASE_TAG_VERSION with the latest AWX Release version.
 # Recent AWX release version is 0.22.0
 
-  - github.com/ansible/awx-operator/config/default?ref=0.22.0
+  - github.com/ansible/awx-operator/config/default?ref=RELEASE_TAG_VERSION
   - 01-secret.yaml
   - 02-pv.yaml
   - 03-pvc.yaml
@@ -13,6 +13,6 @@ resources:
 
 images:
   - name: quay.io/ansible/awx-operator
-    newTag: 0.22.0
+    newTag: RELEASE_TAG_VERSION
 
 namespace: awx
